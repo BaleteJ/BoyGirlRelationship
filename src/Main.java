@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args)
     {
-        Boy newBoy = new Boy();
+/*        Boy newBoy = new Boy();
         Girl newGirl = new Girl();
         Relationship newRelationship = new Relationship();
 
@@ -9,8 +9,12 @@ public class Main {
         newGirl.selectedName = newGirl.namePool[(int)(Math.random()*5)];
         newRelationship.selectedRelationship = newRelationship.relationshipPool[(int)(Math.random()*5)];
 
-        System.out.println(newBoy.selectedName + " " + newRelationship.selectedRelationship + " " + newGirl.selectedName);
+        System.out.println(newBoy.selectedName + " " + newRelationship.selectedRelationship + " " + newGirl.selectedName);*/
 
-        //(int)(Math.random()*5)
+        Boy newBoy = new Boy(true);
+        Girl newGirl = new Girl(true);
+        Relationship newRelationship = new Relationship(true);
+
+        System.out.println(newBoy.selectedName + " " + newRelationship.selectedRelationship + " " + newGirl.selectedName);
     }
 }
