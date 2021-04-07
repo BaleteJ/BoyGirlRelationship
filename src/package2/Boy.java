@@ -1,11 +1,11 @@
 package package2;
 
 public class Boy {
-    protected String[] namePool = {"Jason", "Vince", "David", "Heinz", "Roland"};
+    private String[] namePool = {"Jason", "Vince", "David", "Heinz", "Roland"};
+    private String selectedName;
 
     public static String publicName;
 
-    protected String selectedName;
 
     protected Boy(boolean x)
     {
@@ -16,4 +16,14 @@ public class Boy {
     {
         this.publicName = "Asterios";
     }
+
+    public void publicGenerateBoyName()
+    {
+        this.selectedName = this.namePool[(int)(Math.random()*this.namePool.length)];
+    }
+
+    //Getters
+    public String getSelectedName(){ return this.selectedName;}
+
+    //Setters
 }

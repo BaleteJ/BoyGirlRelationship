@@ -14,10 +14,10 @@ public class Main {
         System.out.println(newBoy.selectedName + " " + newRelationship.selectedRelationship + " " + newGirl.selectedName);*/
 
         //========================================================================
-        /*Boy newBoy = new Boy(true);
+        Boy newBoy = new Boy(true);
         Girl newGirl = new Girl(true);
         Relationship newRelationship = new Relationship(true);
 
-        System.out.println(newBoy.selectedName + " " + newRelationship.selectedRelationship + " " + newGirl.selectedName);*/
+        System.out.println(newBoy.getSelectedName() + " " + newRelationship.getSelectedRelationship() + " " + newGirl.getSelectedName());
     }
 }

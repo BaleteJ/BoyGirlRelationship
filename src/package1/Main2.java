@@ -15,7 +15,8 @@ public class Main2 {
         //System.out.println(newBoy.selectedName + " " + newRelationship.selectedRelationship + " " + newGirl.selectedName);
         //System.out.println("This boy name is public: " + newBoy.publicName);
 
-        System.out.println(newBoy.publicName);
+        newBoy.publicGenerateBoyName();
+        System.out.println(newBoy.getSelectedName());
 
     }
 
